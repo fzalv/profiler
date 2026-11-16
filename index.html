@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="id" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio | ASP.NET & Full-Stack Developer</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Google Fonts: Inter -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        scroll-behavior: smooth;
+      }
+      .hero-section {
+        background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+        color: white;
+        padding: 100px 0 80px 0;
+      }
+      .dotnet-badge {
+        background-color: rgba(255, 255, 255, 0.15);
+        color: #e0e7ff;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+      }
+      .project-card {
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease;
+        border: 1px solid #e5e7eb;
+      }
+      .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+      }
+      .tech-pill {
+        font-size: 0.78rem;
+        background-color: #f3f4f6;
+        color: #374151;
+        padding: 4px 10px;
+        border-radius: 50rem;
+        font-weight: 500;
+      }
+      .skill-icon {
+        width: 48px;
+        height: 48px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        background-color: #eef2ff;
+        color: #4f46e5;
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+          <i class="bi bi-code-slash text-primary me-2"></i>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#keahlian">Keahlian</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyek">Studi Kasus Proyek</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontak">Kontak</a>
+            </li>
+            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+              <a class="btn btn-primary btn-sm px-3" href="#kontak"
+                >Hubungi Saya</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <span class="badge dotnet-badge px-3 py-2 mb-3 rounded-pill">
+              <i class="bi bi-terminal me-1"></i> ASP.NET & SQL Server
+              Specialist
+            </span>
+            <h1 class="display-5 fw-bold mb-3">
+              Membangun Sistem Bisnis & Aplikasi Enterprise yang Andal.
+            </h1>
+            <p class="lead text-light opacity-75 mb-4">
+              Halo, saya <strong>Fauzi Alvan Fadillah</strong>. Seorang Software
+              Developer yang berfokus pada pengembangan aplikasi web berbasis
+              ASP.NET (WebForms, MVC, .NET Core), optimasi database SQL Server,
+              integrasi perangkat keras, serta administrasi server IIS.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a
+                href="#proyek"
+                class="btn btn-light text-primary fw-semibold px-4 py-2"
+              >
+                <i class="bi bi-folder2-open me-2"></i>Lihat Portofolio Proyek
+              </a>
+              <a
+                href="https://github.com/fzalv"
+                target="_blank"
+                class="btn btn-outline-light px-4 py-2"
+              >
+                <i class="bi bi-github me-2"></i>Profil GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Core Skills Section -->
+    <section id="keahlian" class="py-5 bg-light">
+      <div class="container py-3">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Keahlian Teknis & Ekosistem</h2>
+          <p class="text-muted">
+            Teknologi utama yang saya gunakan untuk menyelesaikan masalah
+            operasional bisnis
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm p-3">
+              <div class="card-body">
+                <div class="skill-icon mb-3">
+                  <i class="bi bi-window-stack"></i>
+                </div>
+                <h5 class="fw-bold">Backend .NET</h5>
+                <p class="text-muted small mb-0">
+                  ASP.NET WebForms, ASP.NET MVC, .NET Core Web API, VB.NET, C#.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm p-3">
+              <div class="card-body">
+                <div class="skill-icon mb-3">
+                  <i class="bi bi-database-gear"></i>
+                </div>
+                <h5 class="fw-bold">Database & Reporting</h5>
+                <p class="text-muted small mb-0">
+                  Microsoft SQL Server, Stored Procedures, Crystal Reports.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm p-3">
+              <div class="card-body">
+                <div class="skill-icon mb-3">
+                  <i class="bi bi-hdd-rack"></i>
+                </div>
+                <h5 class="fw-bold">Server & Deployment</h5>
+                <p class="text-muted small mb-0">
+                  Windows Server, IIS Administration, Application Pool Tuning,
+                  SSL Configuration, & Task Scheduler Automation.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm p-3">
+              <div class="card-body">
+                <div class="skill-icon mb-3">
+                  <i class="bi bi-qr-code-scan"></i>
+                </div>
+                <h5 class="fw-bold">Frontend & Integrasi</h5>
+                <p class="text-muted small mb-0">
+                  HTML5, Bootstrap 5, JavaScript/AJAX, Thermal Printer
+                  (ESC/POS), Barcode/QR Scanner, & Payment Gateway API.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="proyek" class="py-5">
+      <div class="container py-3">
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5"
+        >
+          <div>
+            <h2 class="fw-bold mb-1">Proyek Pilihan</h2>
+            <p class="text-muted mb-0">
+              Studi kasus aplikasi yang telah dibangun dan diimplementasikan
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Project 1 -->
+          <div class="col-lg-6">
+            <div class="card h-100 project-card rounded-3 overflow-hidden">
+              <div
+                class="bg-secondary-subtle d-flex align-items-center justify-content-center"
+                style="height: 220px"
+              >
+                <!-- Ganti div ini dengan tag <img src="screenshot-pos.png" class="w-100 h-100 object-fit-cover" alt="Preview Proyek"> -->
+                <!-- <div class="text-center text-muted">
+                  <i class="bi bi-image fs-1"></i>
+                  <p class="small mb-0">Screenshot Dashboard / Sistem POS</p>
+                </div> -->
+
+                <img
+                  src="img/das.png"
+                  class="w-100 h-100 object-fit-cover"
+                  alt="Preview Proyek"
+                />
+              </div>
+              <div class="card-body p-4 d-flex flex-column">
+                <div
+                  class="d-flex justify-content-between align-items-start mb-2"
+                >
+                  <h4 class="card-title fw-bold mb-0">
+                    Documents Approval System (DAS)
+                  </h4>
+                </div>
+                <p class="text-muted small mb-3">
+                  <strong>Masalah:</strong> Proses persetujuan dokumen secara
+                  manual membutuhkan pencetakan kertas, pencarian tanda tangan
+                  fisik secara berjenjang, serta pelacakan status yang sulit
+                  sering kali menyebabkan keterlambatan operasional dan risiko
+                  dokumen hilang.
+                </p>
+                <p class="text-muted small mb-3">
+                  <strong>Solusi:</strong> Membangun aplikasi Document Approval
+                  System berbasis web yang mendigitalisasi seluruh alur
+                  pengajuan hingga pengesahan dokumen. Sistem ini dilengkapi
+                  dengan fitur tanda tangan digital, tracking status persetujuan
+                  secara real-time, serta notifikasi otomatis untuk mempercepat
+                  pengambilan keputusan tanpa kertas (paperless).
+                </p>
+                <div class="d-flex flex-wrap gap-2 mb-4 mt-auto">
+                  <span class="tech-pill">ASP.NET</span>
+                  <span class="tech-pill">Bootstrap 5</span>
+                  <span class="tech-pill">SQL Server</span>
+                  <span class="tech-pill">EPPlus</span>
+                  <span class="tech-pill">AJAX WebMethods</span>
+                  <span class="tech-pill">Crystal Reports</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="col-lg-6">
+            <div class="card h-100 project-card rounded-3 overflow-hidden">
+              <div
+                class="bg-secondary-subtle d-flex align-items-center justify-content-center"
+                style="height: 220px"
+              >
+                <img
+                  src="img/esik.png"
+                  class="w-100 h-100 object-fit-cover"
+                  alt="Preview Proyek"
+                />
+              </div>
+              <div class="card-body p-4 d-flex flex-column">
+                <div
+                  class="d-flex justify-content-between align-items-start mb-2"
+                >
+                  <h4 class="card-title fw-bold mb-0">
+                    Electronic Work Permit
+                  </h4>
+                </div>
+                <p class="text-muted small mb-3">
+                  <strong>Masalah:</strong> Pengajuan surat izin kerja secara
+                  manual memakan waktu lama karena harus melalui birokrasi
+                  dokumen fisik dan tanda tangan berjenjang, yang sering kali
+                  menunda dimulainya pekerjaan di lapangan serta menyulitkan
+                  pemantauan izin yang sedang aktif.
+                </p>
+                <p class="text-muted small mb-3">
+                  <strong>Solusi:</strong> Membangun aplikasi Digital Work
+                  Permit System berbasis web untuk mendigitalisasi proses
+                  pengajuan, verifikasi keselamatan/operasional, hingga
+                  penerbitan surat izin kerja. Dilengkapi dengan alur
+                  persetujuan berjenjang otomatis, notifikasi real-time, dan
+                  tanda tangan digital sehingga izin dapat terbit lebih cepat
+                  dan terpantau dari mana saja.
+                </p>
+
+                <div class="d-flex flex-wrap gap-2 mb-4 mt-auto">
+                  <span class="tech-pill">ASP.NET</span>
+                  <span class="tech-pill">Bootstrap 5</span>
+                  <span class="tech-pill">SQL Server</span>
+                  <span class="tech-pill">EPPlus</span>
+                  <span class="tech-pill">Crystal Reports</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontak" class="py-5 bg-dark text-white">
+      <div class="container py-3 text-center">
+        <h2 class="fw-bold mb-3">Tertarik Bekerja Sama?</h2>
+        <p class="text-light opacity-75 mx-auto mb-4" style="max-width: 600px">
+          Saya terbuka untuk peluang kerja penuh waktu (Full-Time), proyek
+          freelance pengembangan sistem internal perusahaan, maupun konsultasi
+          migrasi/optimasi aplikasi ASP.NET & SQL Server.
+        </p>
+        <div class="d-flex justify-content-center flex-wrap gap-3">
+          <a
+            href="mailto:f.fauzialvan@gmail.com"
+            class="btn btn-primary px-4 py-2"
+          >
+            <i class="bi bi-envelope-fill me-2"></i>Kirim Email
+          </a>
+          <a
+            href="https://www.linkedin.com/in/fauzialvan/"
+            target="_blank"
+            class="btn btn-outline-light px-4 py-2"
+          >
+            <i class="bi bi-linkedin me-2"></i>LinkedIn
+          </a>
+          <a
+            href="https://wa.me/6287790959987"
+            target="_blank"
+            class="btn btn-success px-4 py-2"
+          >
+            <i class="bi bi-whatsapp me-2"></i>WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3 bg-black text-center text-secondary small">
+      <div class="container">&copy; 2026 Fzalv</div>
+    </footer>
+
+    <!-- Modal Detail Studi Kasus (Contoh untuk Proyek 1) -->
+    <div class="modal fade" id="projectModal1" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold">
+              Detail Teknis: Sistem POS & Inventori
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h6 class="fw-bold text-primary">Arsitektur & Tantangan Teknis</h6>
+            <ul>
+              <li>
+                <strong>Integritas Transaksi:</strong> Menggunakan
+                <code>SqlTransaction</code> dan Stored Procedures untuk
+                memastikan pengurangan stok dan pencatatan jurnal penjualan
+                berjalan atomik tanpa selisih data saat trafik kasir tinggi.
+              </li>
+              <li>
+                <strong>Cetak Struk Tanpa Dialog Browser:</strong> Konfigurasi
+                ukuran kertas khusus (80mm continuous) pada Crystal Reports
+                untuk printer thermal Epson TM-T82X.
+              </li>
+              <li>
+                <strong>Optimasi Laporan Excel:</strong> Menggunakan
+                <code>MemoryStream</code> pada EPPlus untuk menyisipkan gambar
+                produk secara dinamis ke dalam sel Excel tanpa membebani
+                penyimpanan sementara server IIS.
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary btn-sm"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
